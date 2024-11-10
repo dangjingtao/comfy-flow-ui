@@ -1,0 +1,40 @@
+{
+  "name": "comfy-flow-ui",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run dev-client\" \"npm run dev-server\"",
+    "dev-client": "cd client && vite",
+    "dev-server": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules server/src/index.ts"
+  },
+  "author": "Tomz_Dang",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/sqlite3": "^3.1.11",
+    "@vitejs/plugin-react": "^4.3.3",
+    "concurrently": "^9.1.0",
+    "express": "^4.21.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sqlite3": "^5.1.7",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "@douyinfe/semi-ui": "^2.69.0",
+    "@xyflow/react": "^12.3.4",
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
+    "react-router-dom": "^6.28.0",
+    "reset-css": "^5.0.2",
+    "sequelize": "^6.37.5"
+  }
+}
